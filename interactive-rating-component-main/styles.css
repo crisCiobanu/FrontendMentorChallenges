@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --color-primary: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey : hsl(217, 12%, 63%);
+    --color-grey-medium: hsl(216, 12%, 54%);
+    --color-blue-dark: hsl(213, 19%, 18%);
+    --color-blue-darker: hsl(216, 12%, 8%);
+    --color-blue-light: hsl(209, 19%, 23%);
+    --font-size: 15px;
+    --font-family: Overpass;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    color: var(--color-white);
+    background-color: var(--color-blue-darker);
+    font-family: var(--font-family);
+}
+
+button {
+    font-family: inherit;
+}
+
+main section {
+    width: 27rem;
+    aspect-ratio: 1;
+
+    border-radius: 2rem;
+    background-color: var(--color-blue-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#thank-you {
+    align-items: center;
+    justify-content: space-around;
+}
+
+#thank-you .text-container{
+    text-align: center;
+}
+
+#thank-you .rating-selected {
+    background-color: var(--color-blue-light);
+    color: var(--color-primary);
+    padding: 1rem 2rem;
+    border-radius: 999vw;
+}
+
+
+main section h1 {
+    padding-bottom: 1rem;
+}
+
+main section p {
+    color: var(--color-grey);
+}
+
+.ratings-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    color: var(--color-grey);
+    font-weight: var(--font-weight-bold);
+    font-size: 17px;
+    transition: all 0.2s ease-in;
+}
+
+.rating:hover{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.rating:focus{
+    background-color: var(--color-grey-medium);
+    color: var(--color-white);
+}
+
+#submit-button {
+    background-color: var(--color-primary);
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    color: var(--color-white);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem;
+}
+
+#submit-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    transition: all 0.2s ease-in;
+}
+
+#thank-you{
+    display: none;
+}
+
+/*Utility classes*/
+
+.round-placeholder {
+    background-color: var(--color-blue-light);
+    border-radius: 999vw;
+    border: none;
+    width: 3.5rem;
+    aspect-ratio: 1;
+}
+
+.center {
+    display: grid;
+    place-content: center;
+}
+
+/*Given styles */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
